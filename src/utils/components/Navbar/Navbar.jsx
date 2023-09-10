@@ -1,8 +1,15 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import "./Navbar.css";
 import { BiMenuAltRight } from "react-icons/bi";
+import {RxCross2} from "react-icons/rx";
 
 const Navbar = () => {
+
+//by default false - it says to be notopened
+  const [ mobileOpened, setMobileOpened ] = useState(false)
+
   return (
     <div className="n-wrapper">
       {/* desktop version */}
@@ -35,12 +42,22 @@ const Navbar = () => {
         <span>Digi Bus</span>
 
         {/*menu icon */}
-        <BiMenuAltRight size={40} />
 
+        {/*open the menu bar using the icon*/}
 
+        {
+          !mobileOpened ? (
+          <BiMenuAltRight size={40}
+          onClick={() => setMobileOpened(true)} />
+          ) : (
+            /*close icon of the menu */
+          <RxCross2 size={40} onClick={() => setMobileOpened(false)} />
+          
+        )}
 
         {/*mobile menu */}
-        <div className="nm-menu">
+        <div className="nm-menu" 
+        style={{transform: mobileOpened && "translateX(0%)" }}>
           <span>What we do</span>
           <span>How it works</span>
           <span>Who we invest in</span>
@@ -48,7 +65,7 @@ const Navbar = () => {
 
         {/* button */}
           <div className="m-funded-button">Get Funded </div>
-          
+
         </div>
       </div>
     </div>
