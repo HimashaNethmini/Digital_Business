@@ -83,7 +83,7 @@
 
     .nm-menu {
         position: fixed;
-        top: 4rem;
+        top: 3.5rem;
         padding: 3rem 2rem;
         box-sizing: border-box;
         left: 0;
@@ -95,7 +95,7 @@
         width: 100%;
         font-size: 1.2rem;
         z-index: 999;
-        height: calc(100vh - 4rem);
+        height: calc(100vh - 3.5rem);
     }
 
     .nm-menu span{
