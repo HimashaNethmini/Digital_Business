@@ -4,8 +4,11 @@ import "./Navbar.css";
 const Navbar = () => {
   return (
     <div className="n-wrapper">
+
+      {/* desktop version */}
       <div className="container">
         <div className="n-container">
+
           {/*left side */}
           <div className="n-logo">
             <span>Digi Bus</span>
@@ -26,6 +29,12 @@ const Navbar = () => {
             
           </div>
         </div>
+      </div>
+
+
+      {/* mobile/tab version */}
+      <div className="nm-container">
+        mobile version
       </div>
     </div>
   );
