@@ -1,0 +1,39 @@
+.h-wrapper {
+    background-color: var(--primary-color);
+    height: 120vh;
+    overflow: hidden;
+}
+
+.h-wrapper .container{
+    padding-top: 8rem;
+}
+
+.h-container{
+    display: flex;
+    height: 80vh;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+.h-left{
+    flex: 1;
+}
+
+.h-right{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.h-title{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: var(--third-color);
+    font-size: 4rem;
+    font-weight: bold;
+
+
+}
