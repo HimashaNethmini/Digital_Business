@@ -50,5 +50,73 @@
     border-radius: 999px;
     text-transform: capitalize;
     font-weight: bold;
+}
+
+/* don't display on desktop screen */
+.nm-container {
+    display: none;
+}
+
+@media (max-width:1200px ) {
+    .n-container{
+        display: none;
+    }
+
+    .nm-container{
+        display: block;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+        position: relative;
+        background-color: var(--primary-color);
+    }
+
+    .nm-container>:nth-child(1)
+
+    /*digi bus */
+    {
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+
+    .nm-menu {
+        position: fixed;
+        top: 4rem;
+        padding: 3rem 2rem;
+        box-sizing: border-box;
+        left: 0;
+        display: flex;
+        background-color: var(--primary-color);
+        flex-direction: column;
+        width: 100%;
+        font-size: 1.2rem;
+        z-index: 999;
+        height: calc(100vh - 4rem);
+    }
+
+    .nm-menu span{
+        margin-bottom: 2rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .m-funded-button {
+        width: 100%;
+        background-color: var(--third-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        padding: 1rem 0rem;
+        border-radius: 999px;
+        color: var(--dark-bg);
+        font-weight: bold;
+
+    }
+
+
+
 
 }
