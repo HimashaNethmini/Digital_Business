@@ -91,6 +91,7 @@
         background-color: var(--primary-color);
         flex-direction: column;
         transform: translateX(-150%);
+        transition: all 300ms ease-in-out;
         width: 100%;
         font-size: 1.2rem;
         z-index: 999;
