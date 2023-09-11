@@ -44,6 +44,12 @@ const Hero = () => {
   return (
     <div className="h-wrapper">
       <div className="container">
+
+        {/* hidden arrow */}
+        <img src = "hero/hero-arrow.png"
+        alt="arrow hidden"
+        className="h-arrow" />
+
         <div className="h-container">
           {/*left side */}
           <div className="h-left">
@@ -101,21 +107,6 @@ const Hero = () => {
               }
             </div>
           </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
           {/*right side */}
           <div className="h-right">
