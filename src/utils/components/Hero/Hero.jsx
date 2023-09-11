@@ -1,5 +1,6 @@
 import React from "react";
 import "./Hero.css";
+import Email from "../Email/Email";
 
 const Hero = () => {
   return (
@@ -17,13 +18,13 @@ const Hero = () => {
               <span>Digital Business</span>
             </div>
 
-            <div className="h-des">
+            <div className="h-desc">
               Revenue based funding and execution support designed for early
               stage founders
             </div>
 
             {/* email box*/}
-            <span>Email</span>
+            <Email/>
           </div>
         </div>
       </div>
