@@ -8,6 +8,15 @@
     padding-top: 8rem;
 }
 
+/*hidden arrow */
+.h-arrow {
+    position: absolute;
+    top: 5rem;
+    width: 100%;
+    max-width: 60rem;
+    z-index: 0;
+}
+
 .h-container{
     display: flex;
     height: 80vh;
