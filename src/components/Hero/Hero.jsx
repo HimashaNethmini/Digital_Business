@@ -1,6 +1,7 @@
 import React from "react";
 import "./Hero.css";
 import Email from "../Email/Email";
+import { HeroData } from "@/src/utils/data";
 
 const Hero = () => {
   return (
@@ -8,7 +9,56 @@ const Hero = () => {
       <div className="container">
         <div className="h-container">
           {/*left side */}
-          <div className="h-left">Left</div>
+          <div className="h-left">
+
+            <div className="image-row">
+              {
+                /*take only 3 data from the array herodata*/
+                HeroData.slice(0,3).map((person, i) => (
+
+                  <div className="person-pill" key={i}>
+                    <div className="person-pill-bg">
+                      <img src={person.src} alt={person.src}  />
+                    </div>
+
+                  </div>
+                ))
+              }
+            </div>
+          
+            {/* second pill person*/}
+            <div className="image-row">
+            {
+                /*take only 3 data from the array herodata*/
+                HeroData.slice(3,6).map((person, i) => (
+
+                  <div className="person-pill" key={i}>
+                    <div className="person-pill-bg">
+                      <img src={person.src} alt={person.src}  />
+                    </div>
+
+                  </div>
+                ))
+              }
+            </div>
+
+          
+          </div>
+
+
+
+
+
+
+
+
+,
+
+
+
+
+
+
 
           {/*right side */}
           <div className="h-right">
