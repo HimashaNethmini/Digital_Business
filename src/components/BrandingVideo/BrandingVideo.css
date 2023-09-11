@@ -11,3 +11,15 @@
     margin-top: -10rem;
     z-index: 1;
 }
+
+@media (max-width : 1024px) {
+    .bv-video{
+        margin-top: 1rem;
+    }
+}
+
+@media ( max-width: 768px) {
+    .bv-video {
+        border-radius: 2rem;
+    }
+}
