@@ -16,10 +16,50 @@
     position: relative;
 }
 
+/* left side styling*/
+
 .h-left{
     flex: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    padding-top: 5rem;
 }
 
+.image-row {
+    display: flex;
+    gap: 2rem;
+}
+
+.person-pill {
+    height: 15rem;
+    width: 6rem;
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.person-pill-bg {
+    border-radius: 999px;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.person-pill-bg > img {
+    width: 100%;
+    object-fit: cover;
+    scale: 2;
+    margin-top: 4rem;
+}
+
+.image-row > :nth-child(2){
+    transform: translateY(-4rem);
+}
+
+
+/* right side styling */
 .h-right{
     flex: 1.25;
     display: flex;
