@@ -1,0 +1,13 @@
+.bv-container .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.bv-video {
+    width: 95%;
+    border-radius:4rem;
+    margin-top: -10rem;
+    z-index: 1;
+}
