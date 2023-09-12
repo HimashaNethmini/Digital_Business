@@ -41,5 +41,27 @@
 }
 
 @media (max-width: 768px) {
-    
+
+    .title {
+        font-size: 2.2rem;
+    }
+
+    .sec-title {
+        font-size: 1.8rem;
+    }
+
+    .desc {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width : 640px) {
+
+    .title {
+        font-size: 1.8rem;
+    }
+
+    .sec-title {
+        font-size: 1.6rem;
+    }
 }
