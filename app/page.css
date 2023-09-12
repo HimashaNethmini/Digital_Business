@@ -37,7 +37,7 @@
 .text {
     color: var(--text-color);
     font-size: 1.1rem;
-    line-height: 1.8rem;
+    line-height: 1.8rem;   
 }
 
 @media (max-width: 768px) {
