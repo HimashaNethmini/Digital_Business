@@ -26,21 +26,20 @@ const Whatwedo = () => {
             {/*First block*/}
             <div className="wwd-block">
                 <span className="sec-title"> Blue Advance</span>
-                <span className="text">Fund recurring growth expenses e.g. customer acquisition, inventory</span>
-            
+                <span className="text">
+                    Fund recurring growth expenses e.g. customer acquisition, inventory
+                </span>
 
                 {/* features inside the block */}
                 <div className="block-features">
                     {
                         features.slice(0,3).map ((feature , i)=> (
-                            <div key={i}>
+                            <div className="block-feature" key={i}>
                                 <Image src={feature.icon} alt="features" width={60} height={60} />
                                 <span>{feature.title}</span>
                             </div>
 
-                        ))
-                    
-
+                        ))               
                     }
                 </div>
             </div>
@@ -51,6 +50,23 @@ const Whatwedo = () => {
 
             {/*second block*/}
             <div className="wwd-block">
+                <span className="sec-title"> Blue Seed</span>
+                <span className="text">
+                    Fund one's offs to scale e.g. product, hiring
+                </span>
+
+                {/* features inside the block */}
+                <div className="block-features">
+                    {
+                        features.slice(3,6).map ((feature , i)=> (
+                            <div className="block-feature" key={i}>
+                                <Image src={feature.icon} alt="features" width={60} height={60} />
+                                <span>{feature.title}</span>
+                            </div>
+
+                        ))               
+                    }
+                </div>
             
             </div>
 
