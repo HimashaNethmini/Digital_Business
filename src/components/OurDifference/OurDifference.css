@@ -46,3 +46,17 @@
 .od-feature .text {
     text-align: center;
 }
+
+/*responsive */
+@media (max-width: 990px ) {
+    .od-features {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 590px ) {
+    .od-feature {
+        width: 80%;
+        margin: auto;
+    }
+}
