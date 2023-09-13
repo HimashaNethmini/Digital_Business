@@ -29,7 +29,6 @@
 .od-features {
     display: flex;
     gap: 2rem;
-    margin-bottom: 10rem;
 }
 
 .od-feature {
@@ -42,4 +41,8 @@
     padding: 2rem;
     border-radius: 1rem;
     
+}
+
+.od-feature .text {
+    text-align: center;
 }
