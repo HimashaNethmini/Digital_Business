@@ -32,7 +32,9 @@ const Howitworks = () => {
                 {/*right side*/}
                 <div className="icon"></div>
                 <Image src={feature.icon} alt="images-features" 
-                width={128} height={128} />
+                width={128} height={128} 
+                style={{translate: "50% 0rem"}} 
+                />
               </div>
             ))}
           </div>
