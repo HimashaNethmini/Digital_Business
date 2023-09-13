@@ -7,6 +7,7 @@ import BrandingVideo from "@/src/components/BrandingVideo/BrandingVideo";
 import Whatwedo from "@/src/components/Whatwedo/Whatwedo";
 import OurDifference from "@/src/components/OurDifference/OurDifference";
 import { motion, useAnimation } from "framer-motion";
+import Howitworks from "@/src/components/Howitworks/Howitworks";
 
 export default function Home() {
   const controls = useAnimation();
@@ -37,6 +38,7 @@ export default function Home() {
       >
         <OurDifference />
       </motion.div>
+      <Howitworks />
     </motion.div>
   );
 }
