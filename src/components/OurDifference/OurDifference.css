@@ -1,0 +1,26 @@
+.od-wrapper {
+    padding-top: 10rem;
+}
+
+.od-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.od-head {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.od-head .tag {
+    color: white;
+}
+
+.od-head .text {
+    color: white;
+    text-align: center;
+    max-width: 65%;
+}
