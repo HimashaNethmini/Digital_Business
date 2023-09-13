@@ -43,7 +43,7 @@ const Whatwedo = () => {
 
             {/*First block*/}
             <div className="wwd-block">
-                <span className="sec-title"> Blue Advance</span>
+                <span className="sec-title"> Blue Advance <br/></span>
                 <span className="text">
                     Fund recurring growth expenses e.g. customer acquisition, inventory
                 </span>
@@ -63,12 +63,9 @@ const Whatwedo = () => {
             </div>
 
 
-
-
-
             {/*second block*/}
             <div className="wwd-block">
-                <span className="sec-title"> Blue Seed</span>
+                <span className="sec-title"> Blue Seed <br/> </span>
                 <span className="text">
                     Fund one's offs to scale e.g. product, hiring
                 </span>
