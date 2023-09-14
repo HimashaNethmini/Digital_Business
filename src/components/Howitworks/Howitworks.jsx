@@ -3,7 +3,7 @@ import "./Howitworks.css";
 import { hitFeatures } from "@/src/utils/data";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { tagVariants, titleVariants } from "@/src/utils/animations";
+import { featureVariants, tagVariants, titleVariants } from "@/src/utils/animations";
 
 const Howitworks = () => {
   return (
@@ -31,7 +31,12 @@ const Howitworks = () => {
           {/* features */}
           <div className="hit-features">
             {hitFeatures.map((feature, i) => (
-              <div key={i} className="hit-feature">
+              <motion.div
+              variants={featureVariants}
+              initial="offscreen"
+              whileInView={"onscreen"}
+               key={i} 
+               className="hit-feature">
 
                 {/*left side */}
                 <div className="detail">
@@ -46,7 +51,7 @@ const Howitworks = () => {
                 width={128} height={128} 
                 style={{translate: "50% 0rem"}} 
                 />
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
