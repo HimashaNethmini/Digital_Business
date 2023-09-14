@@ -1,0 +1,54 @@
+.ww-wrapper .container{
+    padding-top: 13rem;
+}
+
+.ww-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ww-container > div {
+    flex: 1;
+}
+
+.ww-left {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.ww-left .head{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.ww-left .head .title {
+    text-align: left;
+    color: white;
+}
+
+.ww-features {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-width: 28rem;
+}
+
+.ww-feature .text {
+    text-align: justify;
+    color: white;
+}
+
+.ww-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-end;
+}
+
+.ww-right > img {
+    width: 100%;
+}
