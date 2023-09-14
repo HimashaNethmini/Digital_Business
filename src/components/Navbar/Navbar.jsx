@@ -5,6 +5,7 @@ import "./Navbar.css";
 import { BiMenuAltRight } from "react-icons/bi";
 import {RxCross2} from "react-icons/rx";
 import { motion, useMotionValueEvent, useScroll } from "framer-motion";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
 
@@ -38,11 +39,24 @@ const Navbar = () => {
           {/* right side */}
           <div className="n-right">
             <div className="n-menu">
-              {/* making the navigation bar titles */}
+              {/* making the navigation bar titles to connect while scrolling*/}
+            
+            <Link to = "wwd-wrapper" spy={true} smooth={true} >
               <span>what we do </span>
+            </Link>
+
+            <Link to = "hit-wrapper" spy={true} smooth={true} >
               <span> how it works </span>
+            </Link>
+
+            <Link to = "ww-wrapper" spy={true} smooth={true} >
               <span> who we invest in </span>
+            </Link>
+
+            <Link to = "t-wrapper" spy={true} smooth={true} >
               <span> Testimonials </span>
+            </Link>
+
             </div>
 
             {/* button */}
