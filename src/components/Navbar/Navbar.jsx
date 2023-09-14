@@ -45,15 +45,15 @@ const Navbar = () => {
               <span>what we do </span>
             </Link>
 
-            <Link to = "hit-wrapper" spy={true} smooth={true} >
+            <Link to = "hit-wrapper" spy smooth offset={100} >
               <span> how it works </span>
             </Link>
 
-            <Link to = "ww-wrapper" spy={true} smooth={true} >
+            <Link to = "ww-wrapper" spy smooth >
               <span> who we invest in </span>
             </Link>
 
-            <Link to = "t-wrapper" spy={true} smooth={true} >
+            <Link to = "t-wrapper" spy smooth offset={100} >
               <span> Testimonials </span>
             </Link>
 
