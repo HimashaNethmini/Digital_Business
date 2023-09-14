@@ -4,14 +4,30 @@ import React, { useState } from "react";
 import "./Navbar.css";
 import { BiMenuAltRight } from "react-icons/bi";
 import {RxCross2} from "react-icons/rx";
+import { motion, useMotionValueEvent, useScroll } from "framer-motion";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
 
 //by default false - it says to be notopened
   const [ mobileOpened, setMobileOpened ] = useState(false)
 
+  //making sticky and scroll
+  const [ navStyle, setNavStyle ] = useState("");
+  const { scrollYProgress } = useScroll();
+
+  useMotionValueEvent(scrollYProgress, "change", (latest) => {
+
+    if (latest > 0.2) {
+      setNavStyle("sticky");
+
+    } else {
+      setNavStyle("");
+    }
+  });
+
   return (
-    <div className="n-wrapper">
+    <div className={`n-wrapper ${navStyle}`}>
       {/* desktop version */}
       <div className="container">
         <div className="n-container">
@@ -23,11 +39,24 @@ const Navbar = () => {
           {/* right side */}
           <div className="n-right">
             <div className="n-menu">
-              {/* making the navigation bar titles */}
+              {/* making the navigation bar titles to connect while scrolling*/}
+            
+            <Link to = "wwd-wrapper" spy={true} smooth={true} >
               <span>what we do </span>
+            </Link>
+
+            <Link to = "hit-wrapper" spy smooth offset={100} >
               <span> how it works </span>
+            </Link>
+
+            <Link to = "ww-wrapper" spy smooth >
               <span> who we invest in </span>
+            </Link>
+
+            <Link to = "t-wrapper" spy smooth offset={100} >
               <span> Testimonials </span>
+            </Link>
+
             </div>
 
             {/* button */}
