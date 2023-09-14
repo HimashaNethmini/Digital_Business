@@ -20,7 +20,9 @@ const Footer = () => {
             <span>Testimonials</span>
           </div>
         <hr />
-        
+
+        <span className="text"> Made by Care</span>
+
         </div>
       </div>
     </div>
