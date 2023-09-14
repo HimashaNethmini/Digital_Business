@@ -41,13 +41,18 @@ const Whoweinvest = () => {
                   <span className="text">{feature.des}</span>
                 </motion.div>
               ))}
-              
+
             </div>
           </div>
 
-          {/* right side */}
+          {/* right side + animations*/}
           <div className="ww-right">
-            <img src="persons.png" alt="person" />
+            <motion.img 
+            variants={containerVariants(0.7)}
+            initial="offscreen"
+            whileInView={"onscreen"}
+            src="persons.png" alt="person" />
+
           </div>
         </div>
       </div>
