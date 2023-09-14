@@ -8,6 +8,7 @@ import Whatwedo from "@/src/components/Whatwedo/Whatwedo";
 import OurDifference from "@/src/components/OurDifference/OurDifference";
 import { motion, useAnimation } from "framer-motion";
 import Howitworks from "@/src/components/Howitworks/Howitworks";
+import Whoweinvest from "@/src/components/Whoweinvest/Whoweinvest";
 
 export default function Home() {
   const controls = useAnimation();
@@ -39,6 +40,26 @@ export default function Home() {
         <OurDifference />
       </motion.div>
       <Howitworks />
+
+      {/*wrapping our difference page with animation to change colour smoothly */}
+
+      <motion.div
+        onViewportEnter={() =>
+          controls.start({
+            backgroundColor: "var(--primary-color)",
+          })
+        }
+
+        onViewportLeave={() =>
+          controls.start({
+            backgroundColor: "white",
+          })
+        }
+        viewport={{ amount: 0.4 }}
+      >
+        <Whoweinvest />
+      </motion.div>
+
     </motion.div>
   );
 }
