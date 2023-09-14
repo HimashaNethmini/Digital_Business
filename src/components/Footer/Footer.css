@@ -37,3 +37,12 @@
     font-size: 0.9rem;
     font-weight: bold;
 }
+
+/*responsive */
+@media (max-width: 990px){
+    .f-menu{
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+    }
+}
