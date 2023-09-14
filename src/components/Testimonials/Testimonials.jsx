@@ -1,7 +1,7 @@
 import React from "react";
 import "./Testimonials.css";
 //import { motion } from "framer-motion";
-import { tagVariants, titleVariants } from "@/src/utils/animations";
+//import { tagVariants, titleVariants } from "@/src/utils/animations";
 import SlickSlider from "./SlickSlider";
 
 const Testimonials = () => {
