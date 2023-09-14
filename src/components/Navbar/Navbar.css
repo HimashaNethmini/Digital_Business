@@ -23,6 +23,11 @@
     font-weight: 500;
 }
 
+.sticky .n-container {
+    color: var(--title-color);
+    padding: 1rem;
+}
+
 .n-logo {
     font-weight: bold;
     cursor: pointer;

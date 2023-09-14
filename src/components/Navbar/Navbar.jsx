@@ -4,14 +4,29 @@ import React, { useState } from "react";
 import "./Navbar.css";
 import { BiMenuAltRight } from "react-icons/bi";
 import {RxCross2} from "react-icons/rx";
+import { motion, useMotionValueEvent, useScroll } from "framer-motion";
 
 const Navbar = () => {
 
 //by default false - it says to be notopened
   const [ mobileOpened, setMobileOpened ] = useState(false)
 
+  //making sticky and scroll
+  const [ navStyle, setNavStyle ] = useState("");
+  const { scrollYProgress } = useScroll();
+
+  useMotionValueEvent(scrollYProgress, "change", (latest) => {
+
+    if (latest > 0.2) {
+      setNavStyle("sticky");
+
+    } else {
+      setNavStyle("");
+    }
+  });
+
   return (
-    <div className="n-wrapper sticky">
+    <div className={`n-wrapper ${navStyle}`}>
       {/* desktop version */}
       <div className="container">
         <div className="n-container">
