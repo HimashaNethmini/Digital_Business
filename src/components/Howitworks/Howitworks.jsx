@@ -28,7 +28,7 @@ const Howitworks = () => {
             </motion.span>
           </div>
 
-          {/* features */}
+          {/* features + animation*/}
           <div className="hit-features">
             {hitFeatures.map((feature, i) => (
               <motion.div
@@ -38,12 +38,24 @@ const Howitworks = () => {
                key={i} 
                className="hit-feature">
 
-                {/*left side */}
-                <div className="detail">
+                {/*left side + animation */}
+                <motion.div 
+                initial={{ opacity: 0, x: -100 }}
+                whileInView={{
+                  opacity: 1,
+                  x: 0,
+                  transition: {
+                    type : "easeIn",
+                    duration : 1,
+                    delay: .7
+                  }
+                }}
+                className="detail">
+                  
                   <span className="des">0 {i+1}</span>
                   <span className="sec-title">{feature.title}</span>
                   <span className="text">{feature.des}</span>
-                </div>
+                </motion.div>
 
                 {/*right side*/}
                 <div className="icon"></div>
