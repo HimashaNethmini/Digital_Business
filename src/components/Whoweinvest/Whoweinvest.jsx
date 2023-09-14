@@ -3,7 +3,7 @@ import "./Whoweinvest.css";
 import { whoWeInvest } from "@/src/utils/data";
 import image from "@/public/persons.png";
 import { motion } from "framer-motion";
-import { tagVariants } from "@/src/utils/animations";
+import { containerVariants, tagVariants, titleVariants } from "@/src/utils/animations";
 
 const Whoweinvest = () => {
   return (
@@ -20,7 +20,7 @@ const Whoweinvest = () => {
               className="tag">Who we invest in</motion.span>
 
               <motion.span 
-              variants={tagVariants}
+              variants={titleVariants}
               initial="offscreen"
               whileInView={"onscreen"}
               className="title">
@@ -28,14 +28,20 @@ const Whoweinvest = () => {
               </motion.span>
             </div>
 
-            {/* features */}
+            {/* features + animations */}
             <div className="ww-features">
               {whoWeInvest.map((feature, i) => (
-                <div key={i} className="ww-feature">
+
+                <motion.div
+                variants={containerVariants (i * 0.05 + 1)}
+                initial="offscreen"
+                whileInView={"onscreen"}
+                 key={i} className="ww-feature">
                   <span className="des"> {feature.title} <br /> </span>
                   <span className="text">{feature.des}</span>
-                </div>
+                </motion.div>
               ))}
+              
             </div>
           </div>
 
