@@ -52,3 +52,20 @@
 .ww-right > img {
     width: 100%;
 }
+
+/*responsive */
+@media (max-width: 990px) {
+    .ww-container {
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .ww-right{
+        align-self: center;
+        margin-top: 2rem;
+    }
+
+    .ww-right img{
+        max-width: 20rem;
+    }
+}
