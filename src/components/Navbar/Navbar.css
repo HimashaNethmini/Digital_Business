@@ -6,6 +6,13 @@
     /*making navbar at the top */
 }
 
+.sticky{
+    position: fixed;
+    box-shadow: 10px 12px 48px rgba(181, 187, 203, .206) ;
+    background-color: white;
+    top: 0;
+}
+
 .n-container {
     padding: 1.5rem 1rem;
     color: white;

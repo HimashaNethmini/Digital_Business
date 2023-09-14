@@ -11,7 +11,7 @@ const Navbar = () => {
   const [ mobileOpened, setMobileOpened ] = useState(false)
 
   return (
-    <div className="n-wrapper">
+    <div className="n-wrapper sticky">
       {/* desktop version */}
       <div className="container">
         <div className="n-container">
