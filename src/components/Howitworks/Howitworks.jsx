@@ -2,19 +2,30 @@ import React from "react";
 import "./Howitworks.css";
 import { hitFeatures } from "@/src/utils/data";
 import Image from "next/image";
+import { motion } from "framer-motion";
+import { tagVariants, titleVariants } from "@/src/utils/animations";
 
 const Howitworks = () => {
   return (
     <div className="hit-wrapper">
       <div className="container">
         <div className="hit-container">
-          {/*head part */}
+          {/*head part with animations */}
           <div className="hit-head">
-            <span className="tag">How it Works</span>
-            <span className="title">
+            <motion.span
+            variants={tagVariants} 
+            initial="offscreen"
+            whileInView={"onscreen"}
+            className="tag">How it Works</motion.span>
+
+            <motion.span 
+            variants={titleVariants}
+            initial="offscreen"
+            whileInView={"onscreen"}
+            className="title">
               {" "}
               Unlocking potential along the growth journey
-            </span>
+            </motion.span>
           </div>
 
           {/* features */}
