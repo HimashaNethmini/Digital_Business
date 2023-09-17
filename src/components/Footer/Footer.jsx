@@ -17,7 +17,6 @@ const Footer = () => {
             <span>What we do</span>
             <span>How it works</span>
             <span>Who we invest in</span>
-            <span>Testimonials</span>
           </div>
         <hr />
 

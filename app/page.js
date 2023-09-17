@@ -9,7 +9,7 @@ import OurDifference from "@/src/components/OurDifference/OurDifference";
 import { motion, useAnimation } from "framer-motion";
 import Howitworks from "@/src/components/Howitworks/Howitworks";
 import Whoweinvest from "@/src/components/Whoweinvest/Whoweinvest";
-import Testimonials from "@/src/components/Testimonials/Testimonials";
+//import Testimonials from "@/src/components/Testimonials/Testimonials";
 import Footer from "@/src/components/Footer/Footer";
 
 export default function Home() {
@@ -62,7 +62,7 @@ export default function Home() {
         <Whoweinvest />
       </motion.div>
       
-      <Testimonials />
+      {/*<Testimonials />*/}
       <Footer />
 
     </motion.div>

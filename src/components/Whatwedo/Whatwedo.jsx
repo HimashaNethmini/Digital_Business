@@ -27,8 +27,7 @@ const Whatwedo = () => {
             variants={titleVariants}
             className="title">
               {" "}
-              Emowering founders with non dilutive capital and excution
-              expertise
+              Experience the future of digital banking, where innovation meets financial excellence
             </motion.span>
             
             <motion.span

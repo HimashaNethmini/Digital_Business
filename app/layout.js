@@ -7,31 +7,32 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-
   return (
     <>
-    <Head>
-    <link
+      <Head>
+
+        {/* react slickslider links  - https://react-slick.neostack.com/docs/get-started/*/}
+        <link
+          rel="stylesheet"
+          type="text/css"
+          charset="UTF-8"
+          href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
+        />
+
+        <link
+          rel="stylesheet"
+          type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
+        />
+
+        <link
           href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap"
-          rel="stylesheet" />
-    
-    {/* react slickslider links  - https://react-slick.neostack.com/docs/get-started/*/}
-    <link 
-      rel="stylesheet" 
-      type="text/css" 
-      charset="UTF-8" 
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" 
-    /> 
-
-    <link 
-      rel="stylesheet" 
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" 
-    />
-
-    </Head>
-    <html lang="en" />
-    <body>{children}</body>
+          rel="stylesheet"
+        />
+      </Head>
+      
+      <html lang="en" />
+      <body>{children}</body>
     </>
-  )
+  );
 }

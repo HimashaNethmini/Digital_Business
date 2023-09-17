@@ -33,7 +33,7 @@ const Navbar = () => {
         <div className="n-container">
           {/*left side */}
           <div className="n-logo">
-            <span>Digi Bus</span>
+            <span>Digibiz Bank</span>
           </div>
 
           {/* right side */}
@@ -53,10 +53,6 @@ const Navbar = () => {
               <span> who we invest in </span>
             </Link>
 
-            <Link to = "t-wrapper" spy smooth offset={100} >
-              <span> Testimonials </span>
-            </Link>
-
             </div>
 
             {/* button */}
@@ -68,7 +64,7 @@ const Navbar = () => {
       {/* mobile/tab version */}
       <div className="nm-container">
         {/* logo */}
-        <span>Digi Bus</span>
+        <span>Digibiz Bank</span>
 
         {/*menu icon */}
 
@@ -90,7 +86,6 @@ const Navbar = () => {
           <span>What we do</span>
           <span>How it works</span>
           <span>Who we invest in</span>
-          <span>Testimonials</span>
 
         {/* button */}
           <div className="m-funded-button">Get Funded </div>
