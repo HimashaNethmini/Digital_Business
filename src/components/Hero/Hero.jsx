@@ -111,16 +111,14 @@ const Hero = () => {
           {/*right side */}
           <div className="h-right">
             <div className="h-title">
-              <span>Redefine How</span>
-              <span>You Grow your</span>
+              <span>Navigate Your</span>
+              <span>Financial Journey with</span>
               <span>Digital Business</span>
             </div>
 
             <div className="h-desc">
-              Revenue based funding and execution support designed for early
-              stage founders
+              Elevate your financial freedom by taking part in a bank with legacy of Trust and Excellence
             </div>
-
             {/* email box*/}
             <Email/>
           </div>

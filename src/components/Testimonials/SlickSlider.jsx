@@ -1,3 +1,5 @@
+"use client"
+
 import { testimonialsData } from "@/src/utils/data";
 import Image from "next/image";
 import React from "react";
@@ -66,13 +68,15 @@ const SlickSlider = () => {
             {/* low side - name */}
             <div className="c-info">
               <div className="c-avatar">
-                <div className="c-person">
+                  {comment.name[0]}
+              </div>
+
+              <div className="c-person">
                   <span>{comment.name}</span>
                   <span>{comment.profession}</span>
                 </div>
               </div>
-            </div>
-          </div>
+            </div>         
         ))}
       </Slider>
     </div>
